@@ -12,7 +12,7 @@
 
 namespace quicksort_utils {
 template <typename T>
-constexpr std::iterator_traits<T *>::difference_type THRESHOLD = 10'000;
+constexpr typename std::iterator_traits<T *>::difference_type THRESHOLD = 10'000;
 
 template <typename T> T choose_pivot(const T *begin, const T *end) {
   std::srand(std::time(nullptr));
